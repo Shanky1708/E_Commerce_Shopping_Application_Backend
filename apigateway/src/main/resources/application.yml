@@ -1,0 +1,77 @@
+eureka:
+  instance:
+    hostname: localhost
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: api-gateway
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    gateway:
+      routes:
+        - id: profile-service
+          uri: lb://profile-service
+          predicates:
+            - Path=/profile/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: profile-service
+                fallbackuri: forward:/profileServiceFallback
+
+        - id: product-service
+          uri: lb://product-service
+          predicates:
+            - Path=/product/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: product-service
+                fallbackuri: forward:/productServiceFallback
+
+        - id: cart-service
+          uri: lb://cart-service
+          predicates:
+            - Path=/cart/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: cart-service
+                fallbackuri: forward:/cartServiceFallback
+
+        - id: order-service
+          uri: lb://order-service
+          predicates:
+            - Path=/order/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: order-service
+                fallbackuri: forward:/orderServiceFallback
+
+        - id: jwtauth-service
+          uri: lb://jwtauth-service
+          predicates:
+            - Path=/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: jwtauth-service
+                fallbackuri: forward:/jwtauthServiceFallback
+hystrix:
+  command:
+    fallbackcmd:
+      execution:
+        isolation:
+          thread:
+            timeoutInMillieseconds: 5000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream

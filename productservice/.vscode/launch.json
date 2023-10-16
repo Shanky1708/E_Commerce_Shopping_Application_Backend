@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ProductserviceApplication<productservice>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.cg.eshoppingzone.productservice.ProductserviceApplication",
+            "projectName": "productservice",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+2022-04-12 14:49:52,018 INFO  StartupInfoLogger:55 - [] Starting Application using Java 17.0.2 on LIN24008940 with PID 26472 (C:\Users\spande10\Desktop\CaseStudy\profile.userprofileservice\profile.userprofileservice\target\classes started by spande10 in c:\Users\spande10\Desktop\CaseStudy\profile.userprofileservice\profile.userprofileservice)
+2022-04-12 14:49:52,029 INFO  SpringApplication:640 - [] No active profile set, falling back to 1 default profile: "default"
+2022-04-12 14:49:52,157 INFO  DeferredLog:255 - [] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-12 14:49:52,162 INFO  DeferredLog:255 - [] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-12 14:49:53,696 INFO  RepositoryConfigurationDelegate:132 - [] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-04-12 14:49:53,900 INFO  RepositoryConfigurationDelegate:201 - [] Finished Spring Data repository scanning in 193 ms. Found 1 MongoDB repository interfaces.
+2022-04-12 14:49:54,246 INFO  GenericScope:283 - [] BeanFactory id=59faf4a7-08d2-348c-a025-01ce3d9c659f
+2022-04-12 14:49:55,029 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 7001 (http)
+2022-04-12 14:49:55,057 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2022-04-12 14:49:55,061 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-12 14:49:55,236 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2022-04-12 14:49:55,237 INFO  ServletWebServerApplicationContext:290 - [] Root WebApplicationContext: initialization completed in 3069 ms
+2022-04-12 14:49:55,535 INFO  SLF4JLogger:71 - [] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-12 14:49:55,673 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:2, serverValue:5}] to localhost:27017
+2022-04-12 14:49:55,673 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:27017
+2022-04-12 14:49:55,676 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=51476000}
+2022-04-12 14:49:55,783 WARN  CustomConversions:261 - [] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-04-12 14:49:55,990 WARN  OptionalLiveReloadServer:61 - [] Unable to start LiveReload server
+2022-04-12 14:49:56,081 WARN  CustomConversions:261 - [] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-04-12 14:49:57,495 INFO  DiscoveryClientOptionalArgsConfiguration:68 - [] Eureka HTTP Client uses RestTemplate.
+2022-04-12 14:49:57,759 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 - [] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-04-12 14:49:57,873 INFO  InstanceInfoFactory:67 - [] Setting initial instance status as: STARTING
+2022-04-12 14:49:57,952 INFO  DiscoveryClient:372 - [] Initializing Eureka in region us-east-1
+2022-04-12 14:49:57,966 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-12 14:49:58,016 INFO  DiscoveryClient:1007 - [] Disable delta property : false
+2022-04-12 14:49:58,017 INFO  DiscoveryClient:1008 - [] Single vip registry refresh property : null
+2022-04-12 14:49:58,017 INFO  DiscoveryClient:1009 - [] Force full registry fetch : false
+2022-04-12 14:49:58,018 INFO  DiscoveryClient:1010 - [] Application is null : false
+2022-04-12 14:49:58,019 INFO  DiscoveryClient:1011 - [] Registered Applications size is zero : true
+2022-04-12 14:49:58,020 INFO  DiscoveryClient:1013 - [] Application version is -1: true
+2022-04-12 14:49:58,020 INFO  DiscoveryClient:1097 - [] Getting all instance registry info from the eureka server
+2022-04-12 14:49:58,512 INFO  DiscoveryClient:1106 - [] The response status is 200
+2022-04-12 14:49:58,516 INFO  DiscoveryClient:1321 - [] Starting heartbeat executor: renew interval is: 30
+2022-04-12 14:49:58,521 INFO  InstanceInfoReplicator:60 - [] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-04-12 14:49:58,531 INFO  DiscoveryClient:492 - [] Discovery Client initialized at timestamp 1649755198529 with initial instances count: 1
+2022-04-12 14:49:58,533 INFO  EurekaServiceRegistry:41 - [] Registering application PROFILE-SERVICE with eureka with status UP
+2022-04-12 14:49:58,535 INFO  DiscoveryClient$3:1352 - [] Saw local status change event StatusChangeEvent [timestamp=1649755198535, current=UP, previous=STARTING]
+2022-04-12 14:49:58,538 INFO  DiscoveryClient:873 - [] DiscoveryClient_PROFILE-SERVICE/LIN24008940.corp.capgemini.com:profile-service:7001: registering service...
+2022-04-12 14:49:58,606 INFO  TomcatWebServer:220 - [] Tomcat started on port(s): 7001 (http) with context path ''
+2022-04-12 14:49:58,614 INFO  DiscoveryClient:882 - [] DiscoveryClient_PROFILE-SERVICE/LIN24008940.corp.capgemini.com:profile-service:7001 - registration status: 204
+2022-04-12 14:49:58,614 INFO  EurekaAutoServiceRegistration:144 - [] Updating port to 7001
+2022-04-12 14:49:58,743 INFO  DocumentationPluginsBootstrapper:120 - [] Context refreshed
+2022-04-12 14:49:58,758 INFO  DocumentationPluginsBootstrapper:123 - [] Found 1 custom documentation plugin(s)
+2022-04-12 14:49:58,778 INFO  ApiListingReferenceScanner:41 - [] Scanning for api listing references
+2022-04-12 14:49:59,113 INFO  StartupInfoLogger:61 - [] Started Application in 7.78 seconds (JVM running for 8.801)
+2022-04-12 14:54:58,040 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-12 14:59:58,055 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-12 15:04:58,074 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration

@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CartserviceApplication<cartservice>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.capgemini.cartservice.CartserviceApplication",
+            "projectName": "cartservice",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
