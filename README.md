@@ -1,1 +1,2 @@
 # E_Commerce_Shopping_Application_Backend
+This E_Commerce Shopping Application is a Backend_Application which is build using Spring Boot Rest Api's ( Microservice design pattern ) , this application contain Api-Gateway,Histrix-Dashboard,Eureka-Server,and other Rest-Api's.For Testing Junit and Mockito is used,Logging is also implemented,For security JWT token is used and for Interservice communication Rest_Template Is Used.
